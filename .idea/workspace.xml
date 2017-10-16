@@ -14,8 +14,8 @@
       <file leaf-file-name="Task1_add_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+            <state relative-caret-position="374">
+              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -23,7 +23,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,12 +48,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/group.py" />
         <option value="$PROJECT_DIR$/Task1_add_group.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="474" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="182" />
+    <option name="y" value="4" />
     <option name="width" value="1209" />
     <option name="height" value="735" />
   </component>
@@ -86,7 +105,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in Task1_add_group.py">
+  <component name="RunManager" selected="Python tests.py.test for Task1_add_group.Task1_add_group">
+    <configuration name="Task1_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Task1" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Task1_add_group.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="Unittests in Task1_add_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,13 +168,32 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="2">
+    <configuration name="py.test for Task1_add_group.Task1_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="C:\python_training\Task1\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Task1" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Task1_add_group.Task1_add_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Task1_add_group.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Task1_add_group" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Task1_add_group.py" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Task1_add_group" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Task1_add_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -168,9 +223,24 @@
     <history-entry file="Unittests_in_Task1_add_group_py - 2017.10.16 at 21h 12m 43s.xml">
       <configuration name="Unittests in Task1_add_group.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_Task1_add_group_py - 2017.10.16 at 22h 19m 42s.xml">
+      <configuration name="Unittests in Task1_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Task1_add_group_py - 2017.10.16 at 22h 20m 27s.xml">
+      <configuration name="Unittests in Task1_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.16 at 22h 20m 44s.xml">
+      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.16 at 22h 22m 29s.xml">
+      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.16 at 22h 24m 34s.xml">
+      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="474" y="0" width="1209" height="735" extended-state="0" />
+    <frame x="182" y="4" width="1209" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -219,10 +289,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
