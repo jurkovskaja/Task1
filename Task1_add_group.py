@@ -15,11 +15,10 @@ class Task1_add_group(unittest.TestCase):
         self.wd = WebDriver(capabilities={"marionette": False})
         self.wd.implicitly_wait(60)
     
-    def test_Task1_add_group(self):
-        wd = self.wd
-        # open home page
+    def open_home_page(self, wd):
         wd.get("http://localhost/addressbook/")
-        #login
+
+    def login(self, wd):
         wd.find_element_by_id("LoginForm").click()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
@@ -28,8 +27,11 @@ class Task1_add_group(unittest.TestCase):
         wd.find_element_by_name("pass").clear()
         wd.find_element_by_name("pass").send_keys("secret")
         wd.find_element_by_xpath("//form[@id='LoginForm']/input[3]").click()
-        # open groups page
+
+    def open_groups_page(self, wd):
         wd.find_element_by_link_text("groups").click()
+
+    def create_group(self, wd):
         # init group creation
         wd.find_element_by_name("new").click()
         # fill group form
@@ -44,12 +46,22 @@ class Task1_add_group(unittest.TestCase):
         wd.find_element_by_name("group_footer").send_keys("Task1")
         # submit groop creation
         wd.find_element_by_name("submit").click()
-        # return groups page
+
+    def return_to_groups_page(self, wd):
         wd.find_element_by_link_text("group page").click()
-        # logout
+
+    def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
 
-    
+    def test_Task1_add_group(self):
+        wd = self.wd
+        self.open_home_page(wd)
+        self.login(wd)
+        self.open_groups_page(wd)
+        self.create_group(wd)
+        self.return_to_groups_page(wd)
+        self.logout(wd)
+
     def tearDown(self):
         self.wd.quit()
 
