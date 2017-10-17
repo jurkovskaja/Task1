@@ -26,8 +26,8 @@
       <file leaf-file-name="Task1_add_contact.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task1_add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+            <state relative-caret-position="224">
+              <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -67,8 +67,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="437" />
-    <option name="y" value="24" />
+    <option name="x" value="177" />
+    <option name="y" value="106" />
     <option name="width" value="1209" />
     <option name="height" value="735" />
   </component>
@@ -241,27 +241,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.16 at 22h 24m 34s.xml">
-      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.17 at 20h 24m 05s.xml">
-      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 20h 25m 42s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 20h 41m 37s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 04m 50s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 06m 16s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 07m 19s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 11m 45s.xml">
       <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
     </history-entry>
@@ -271,9 +250,30 @@
     <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 43m 39s.xml">
       <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 00m 43s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 24m 36s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 27m 50s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 34m 40s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 37m 30s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 44m 39s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 45m 31s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="437" y="24" width="1209" height="735" extended-state="0" />
+    <frame x="177" y="106" width="1209" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -342,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task1_add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="85" column="73" lean-forward="false" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+        <state relative-caret-position="224">
+          <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
