@@ -11,23 +11,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Task1_add_group.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
+      <file leaf-file-name="Task2_add_group.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task2_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-              <folding>
-                <element signature="e#24#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task1_add_contact.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task1_add_contact.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task1_add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="232">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="139" selection-end-column="19" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -71,15 +79,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/group.py" />
-        <option value="$PROJECT_DIR$/Task1_add_group.py" />
         <option value="$PROJECT_DIR$/contact.py" />
         <option value="$PROJECT_DIR$/Task1_add_contact.py" />
+        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/Task1_add_group.py" />
+        <option value="$PROJECT_DIR$/Task2_add_group.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="277" />
-    <option name="y" value="13" />
+    <option name="x" value="208" />
+    <option name="y" value="23" />
     <option name="width" value="1209" />
     <option name="height" value="735" />
   </component>
@@ -98,8 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,6 +119,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in Task1_add_contact.py">
+  <component name="RunManager" selected="Python tests.py.test in Task2_add_group.py">
     <configuration name="Task1_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,21 +161,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Unittests in Task1_add_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Task1" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Task1_add_group.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="Unnamed" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,19 +222,51 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Task1_add_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="5">
+    <configuration name="py.test in Task1_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="C:\python_training\Task1\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Task1" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Task1_add_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test in Task2_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="C:\python_training\Task1\env\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Task1" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Task2_add_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Task1_add_group.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Task1_add_group" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_contact.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Task1_add_group" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_contact.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_group.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in Task2_add_group.py" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_contact.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in Task2_add_group.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_group.py" />
         <item index="2" class="java.lang.String" itemvalue="Python.Task1_add_group" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Task1_add_group.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for Task1_add_group.Task1_add_group" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in Task1_add_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -257,20 +284,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 16m 25s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 21h 43m 39s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 00m 43s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 24m 36s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 27m 50s.xml">
-      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    <history-entry file="py_test_for_Task1_add_group_Task1_add_group - 2017.10.21 at 12h 19m 20s.xml">
+      <configuration name="py.test for Task1_add_group.Task1_add_group" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 22h 34m 40s.xml">
       <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
@@ -287,12 +302,23 @@
     <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.17 at 23h 07m 22s.xml">
       <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_Task1_add_contact_py - 2017.10.21 at 12h 18m 09s.xml">
+      <configuration name="py.test in Task1_add_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task1_add_group_py - 2017.10.21 at 13h 08m 07s.xml">
+      <configuration name="py.test in Task1_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task2_add_group_py - 2017.10.21 at 13h 14m 55s.xml">
+      <configuration name="py.test in Task2_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_Task2_add_group_py - 2017.10.21 at 13h 17m 54s.xml">
+      <configuration name="py.test in Task2_add_group.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="277" y="13" width="1209" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="208" y="23" width="1209" height="735" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -316,17 +342,51 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task1_add_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -340,11 +400,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task1_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="75" lean-forward="true" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-          <folding>
-            <element signature="e#24#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -366,11 +424,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task1_add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="232">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="139" selection-end-column="19" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task2_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
