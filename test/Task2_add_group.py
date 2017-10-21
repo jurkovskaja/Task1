@@ -14,12 +14,12 @@ def app(request):
     return fixture
 
 def test_Task2_add_group(app):
-    app.login(username="admin",password="secret")
+    app.session.login(username="admin",password="secret")
     app.create_group(Group(name="Task2", header="Task2", footer="Task2"))
-    app.logout()
+    app.session.logout()
 
 def test_Task2_add_empty_group(app):
-    app.login(username="admin", password="secret")
+    app.session.login(username="admin", password="secret")
     app.create_group(Group(name="", header="", footer=""))
-    app.logout()
+    app.session.logout()
 
