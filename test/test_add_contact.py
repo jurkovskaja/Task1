@@ -1,17 +1,7 @@
 # -*- coding: utf-8 -*-
-import pytest
-from fixture.application_contact import Application_contact
 from model.contact import Contact
 
-# init fixture
-@pytest.fixture
-def app(request):
-    fixture = Application_contact()
-    # an indication of how fixture should be destroyed
-    request.addfinalizer(fixture.destroy)
-    return fixture
-
-def test_Task2_add_contact(app):
+def test_add_contact(app):
    app.session.login(username="admin", password="secret")
    app.contact.create(Contact(firstname="qwee", middlename="qwere", lastname="qwerqwetqe", nickname="dfgfdg",
                               title="dfgnhgf", company="sdfsdfsdf", address="qwerwreqer", home="11", mobile_phone="22",
