@@ -17,7 +17,7 @@ class Application:
             self.wd.current_url
             return True
         except:
-            False
+            return False
 
     def open_home_page(self):
         wd = self.wd
