@@ -8,6 +8,7 @@ class ContactHelper:
         # init add address book
         wd.find_element_by_link_text("add new").click()
         # fill address book form
+        
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys("%s" % contact.firstname)
@@ -108,7 +109,13 @@ class ContactHelper:
         # return to home page, clicked 'home page'
         wd.find_element_by_xpath("//div/div[4]/div/i/a[2]").click()
 
+
     def save_change(self):
         wd = self.app.wd
         # save change, clicked 'Enter'
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
+
+    def count(self):
+        wd = self.app.wd
+        # number of contact in the list
+        return len(wd.find_elements_by_name("selected[]"))
