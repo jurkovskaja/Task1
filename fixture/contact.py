@@ -13,6 +13,7 @@ class ContactHelper:
         self.fill_contact_form(contact)
         self.submit_add_contact()
         self.return_to_home_page()
+        self.contact_cache = None
 
     def change_field_value(self, field_name, text):
         wd = self.app.wd
@@ -62,6 +63,7 @@ class ContactHelper:
         # submit deletion
         wd.switch_to_alert().accept()
         self.click_on_home_link()
+        self.contact_cache = None
 
     def select_first_contact(self):
         wd = self.app.wd
@@ -107,12 +109,16 @@ class ContactHelper:
         self.fill_contact_form(contact)
         self.submit_modify_contact()
         self.return_to_home_page()
+        self.contact_cache = None
+
+    contact_cache = None
 
     def get_contact_list(self):
-        wd = self.app.wd
-        contacts = []
-        for element in wd.find_elements_by_css_selector("tr[name=entry]"):
-            text = element.text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(firstname=text, id=id))
-        return contacts
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name=entry]"):
+                text = element.text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(firstname=text, id=id))
+        return list(self.contact_cache)
