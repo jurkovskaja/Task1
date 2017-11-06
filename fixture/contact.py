@@ -129,7 +129,8 @@ class ContactHelper:
             wd = self.app.wd
             self.contact_cache = []
             for element in wd.find_elements_by_css_selector("tr[name=entry]"):
-                text = element.text
+                td = element.find_elements_by_tag_name("td")
+                text = td[2].text
                 id = element.find_element_by_name("selected[]").get_attribute("value")
                 self.contact_cache.append(Contact(firstname=text, id=id))
         return list(self.contact_cache)
