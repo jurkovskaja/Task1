@@ -87,7 +87,7 @@ class ContactHelper:
 
     def select_change_some_contact(self, index):
         wd = self.app.wd
-        wd.find_element_by_xpath(("//table[@id='maintable']/tbody/tr[%s]/td[8]/a/img")%(index+1)).click()
+        wd.find_element_by_xpath(("//table[@id='maintable']/tbody/tr[%s]/td[8]/a/img")%(index+2)).click()
 
 
     def click_on_home_link(self):
