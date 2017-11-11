@@ -1,5 +1,5 @@
 from model.contact import Contact
-
+import re
 
 class ContactHelper:
 
@@ -85,10 +85,13 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
 
-    def select_change_some_contact(self, index):
+    def open_contact_to_edit_by_index(self, index):
         wd = self.app.wd
         wd.find_element_by_xpath(("//table[@id='maintable']/tbody/tr[%s]/td[8]/a/img")%(index+2)).click()
 
+    def open_contact_view_by_index(self, index):
+        wd = self.app.wd
+        wd.find_element_by_xpath(("//table[@id='maintable']/tbody/tr[%s]/td[7]/a/img")%(index+2)).click()
 
     def click_on_home_link(self):
         wd = self.app.wd
@@ -120,7 +123,7 @@ class ContactHelper:
 
     def modify_contact_by_index(self, index, contact):
         wd = self.app.wd
-        self.select_change_some_contact(index)
+        self.open_contact_to_edit_by_index(index)
         self.select_firstname()
         self.fill_contact_form(contact)
         self.submit_modify_contact()
@@ -137,6 +140,40 @@ class ContactHelper:
                 td = element.find_elements_by_tag_name("td")
                 last_name = td[1].text
                 first_name = td[2].text
-                id = element.find_element_by_name("selected[]").get_attribute("value")
-                self.contact_cache.append(Contact(lastname=last_name, firstname=first_name, id=id))
-        return list(self.contact_cache)
+                id = td[0].find_element_by_name("selected[]").get_attribute("value")
+                # вычитываем весть текст из ячейки таблицы и делаем вырезку
+                all_phones = td[5].text.splitlines()# список телефонов
+                self.contact_cache.append(Contact(lastname=last_name, firstname=first_name, id=id,
+                                                  home=all_phones[0],mobile_phone=all_phones[1],
+                                                  work_phone=all_phones[2], phone2=all_phones[3]))
+                return list(self.contact_cache)
+
+    def get_contact_info_from_edit_page(self,index):
+        wd = self.app.wd
+        self.open_contact_to_edit_by_index(index)
+        firstname = wd.find_element_by_name("firstname").get_attribute("value")
+        lastname = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        home = wd.find_element_by_name("home").get_attribute("value")
+        mobile_phone = wd.find_element_by_name("mobile").get_attribute("value")
+        work_phone = wd.find_element_by_name("work").get_attribute("value")
+        phone2 = wd.find_element_by_name("phone2").get_attribute("value")
+        # строим объект из этих данных
+        return Contact(firstname=firstname, lastname=lastname,
+                       id=id, home=home, mobile_phone=mobile_phone,
+                       work_phone=work_phone, phone2=phone2)
+
+    def get_contact_from_view_page(self,index):
+        wd = self.app.wd
+        self.open_contact_view_by_index(index)
+        # получаем весь текст со странице просмотра
+        text = wd.find_element_by_id("content").text
+        # вычленяем нужный текст
+        home = re.search("H: (.*)", text).group(1)
+        work_phone = re.search("W: (.*)", text).group(1)
+        mobile_phone = re.search("M: (.*)", text).group(1)
+        phone2 = re.search("P: (.*)", text).group(1)
+        # строим объект из этих данных
+        return Contact(home=home, mobile_phone=mobile_phone,
+                       work_phone=work_phone, phone2=phone2)
+
