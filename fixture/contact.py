@@ -140,13 +140,12 @@ class ContactHelper:
                 td = element.find_elements_by_tag_name("td")
                 last_name = td[1].text
                 first_name = td[2].text
-                id = td[0].find_element_by_name("selected[]").get_attribute("value")
-                # вычитываем весть текст из ячейки таблицы и делаем вырезку
-                all_phones = td[5].text.splitlines()# список телефонов
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                # вычитываем весть текст из ячейки таблицы 'All phones' и делаем вырезку
+                all_phones = td[5].text
                 self.contact_cache.append(Contact(lastname=last_name, firstname=first_name, id=id,
-                                                  home=all_phones[0],mobile_phone=all_phones[1],
-                                                  work_phone=all_phones[2], phone2=all_phones[3]))
-                return list(self.contact_cache)
+                                                  all_phones_from_home_page=all_phones))
+            return list(self.contact_cache)
 
     def get_contact_info_from_edit_page(self,index):
         wd = self.app.wd
