@@ -2,11 +2,11 @@ from random import randrange
 
 
 def test_email_on_home_page(app):
-    #index = randrange(len(app.contact.get_contact_list()))
+    index = randrange(len(app.contact.get_contact_list()))
     # получаем информацию с главной страницы
-    contact_from_home_page = app.contact.get_contact_list()[0]
+    contact_from_home_page = app.contact.get_contact_list()[index]
     # получаем информацию со страницы редактирования
-    contact_from_edit_page = app.contact.get_contact_info_from_edit_page(0)
+    contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)
     # сравниваем содержимое ячейки'All email' c результатом склейки
     assert contact_from_home_page.all_email_from_home_page == merge_email_like_on_home_page(contact_from_edit_page)
 
