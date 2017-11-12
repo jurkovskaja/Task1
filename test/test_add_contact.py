@@ -1,18 +1,35 @@
 # -*- coding: utf-8 -*-
 from model.contact import Contact
+import pytest
+import random
+import string
 
 
-def test_add_contact(app):
+# генерация случайных строк не превышаюших длину maxlen
+def random_string(prefix, maxlen):
+    symbols = string.ascii_letters + string.digits + string.punctuation + " "*10
+    return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
+
+
+testdata = [
+    Contact(firstname=random_string("firstname", 10), lastname=random_string("lastname", 10), address=(random_string("adress", 10)),
+            home=random_string("home", 10), mobile_phone=random_string("mobile_phone", 10), work_phone=random_string("work_phone", 10),
+            phone2=random_string("phone", 10), email=random_string("email", 10), email2=random_string("email2", 10),
+            email3=random_string("email3", 10), middlename="", nickname="", title="", company="", fax="", homepage="",
+            address2="", notes="", date="", byear="", ayear="")
+            for i in range(1)
+]
+
+
+@pytest.mark.parametrize("contact", testdata, ids=[repr(x) for x in testdata])
+
+
+def test_add_contact(app, contact):
     old_contacts = app.contact.get_contact_list()
-    cont = Contact(firstname="5558", middlename="qwere", lastname="qwerqwetqe", nickname="dfgfdg",
-                              title="dfgnhgf", company="sdfsdfsdf", address="qwerwreqer", home="11", mobile_phone="22",
-                              work_phone="33", fax="444", email="5555", email2="666", email3="777", homepage="sadffasd",
-                              address2="1wrtrewer", phone2="phone2", notes="sdfgnvbxfgsdf", date="option[18]",
-                              month="option[12]", byear="123", aday="option[31]", amonth="option[2]", ayear="1231")
-    app.contact.create(cont)
+    app.contact.create(contact)
     assert len(old_contacts) + 1 == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    old_contacts.append(cont)
+    old_contacts.append(contact)
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
 
