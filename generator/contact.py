@@ -3,7 +3,7 @@ from model.contact import Contact
 import random
 import string
 import os.path
-import json
+import jsonpickle
 import getopt # чтение опций командной строки
 import sys # для получения доступа к опциям командной строки
 
@@ -14,7 +14,7 @@ except getopt.GetoptError as err:
     sys.exit(2)
 
 n = 3
-f = "data/contact.json"
+f = "data/contacts.json"
 
 for o, a in opts:
     if o == "-n":
@@ -41,4 +41,5 @@ testdata = [
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f) # путь к файлу
 
 with open(file, "w") as out: # открываем файл на запись
-    out.write(json.dumps(testdata, default=lambda x: x.__dict__, indent=2))
+    jsonpickle.set_encoder_options("json", indent=2)
+    out.write(jsonpickle.encode(testdata))
