@@ -14,10 +14,8 @@ class GroupHelper:
     def create(self, group):
         wd = self.app.wd
         self.open_groups_page()
-        # init group creation
         wd.find_element_by_name("new").click()
         self.fill_group_form(group)
-        # submit groop creation
         wd.find_element_by_name("submit").click()
         self.return_to_groups_page()
         self.group_cache = None
