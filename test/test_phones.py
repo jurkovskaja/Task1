@@ -1,15 +1,17 @@
 import re
 from random import randrange
+from model.contact import Contact
 
 
-def test_phones_on_home_page(app):
-    index = randrange(len(app.contact.get_contact_list()))
+def test_phones_on_home_page(app, db):
     # получаем информацию с главной страницы
-    contact_from_home_page = app.contact.get_contact_list()[index]
-    # получаем информацию со страницы редактирования
-    contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)
-    # сравниваем содержимое ячейки'All phones' c результатом склейки
-    assert contact_from_home_page.all_phones_from_home_page == merge_phones_like_on_home_page(contact_from_edit_page)
+    contact_from_home_page = app.contact.get_contact_phones_list()
+    # получаем информацию из БД
+    contact_from_db = db.get_contacts_email_list()
+    for contact in contact_from_db:
+        contact.all_phones_from_home_page = merge_phones_like_on_home_page(contact)
+    # сравниваем
+    assert sorted(contact_from_home_page, key=Contact.id_or_max) == sorted(contact_from_db, key=Contact.id_or_max)
 
 
 def test_phones_on_contact_view_page(app):

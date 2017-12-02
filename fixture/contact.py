@@ -171,11 +171,35 @@ class ContactHelper:
                 address = td[3].text
                 all_phones = td[5].text # вычитываем весть текст из ячейки таблицы 'All phones'
                 all_email = td[4].text # вычитываем весть текст из ячейки таблицы 'All email'
-                self.contact_cache.append(Contact(lastname=last_name, firstname=first_name,
-                                                  id=id, address=address,
-                                                  all_phones_from_home_page=all_phones,
-                                                  all_email_from_home_page=all_email,))
+                self.contact_cache.append(Contact(lastname=last_name, firstname=first_name, id=id, address=address,
+                                                  all_email_from_home_page=all_email,
+                                                  all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
+
+
+    def get_contact_email_list(self):
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name=entry]"):
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                td = element.find_elements_by_tag_name("td")
+                all_email = td[4].text  # вычитываем весть текст из ячейки таблицы 'All email'
+                self.contact_cache.append(Contact(id=id, all_email_from_home_page=all_email))
+        return list(self.contact_cache)
+
+
+    def get_contact_phones_list(self):
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name=entry]"):
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                td = element.find_elements_by_tag_name("td")
+                all_phones = td[5].text  # вычитываем весть текст из ячейки таблицы 'All phones'
+                self.contact_cache.append(Contact(id=id, all_phones_from_home_page=all_phones))
+        return list(self.contact_cache)
+
 
     def get_contact_info_from_edit_page(self,index):
         wd = self.app.wd
